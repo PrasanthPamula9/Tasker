@@ -10,7 +10,7 @@ export interface ContextType {
 }
 export type userType = Pick<ContextType, 'FirstName' | 'LastName' | 'IsLoading' | 'IsLoggedIn'>
 export const UserContext = React.createContext<ContextType | undefined>(undefined)
-export function userContextProvider({ children }: { children: React.ReactNode }): React.JSX.Element {
+export function UserContextProvider({ children }: { children: React.ReactNode }): React.JSX.Element {
 
     const [user, SetUser] = React.useState<userType>({
         FirstName: '',

@@ -5,7 +5,7 @@ import { FormControl, InputLabel, Input, FormHelperText,TextField,Button } from 
 
 
 
-export default function Page() {
+export default function LoginPage() {
     return (
         <div style={{
             display:'flex',
